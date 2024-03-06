@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jira Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jira Dashboard</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-     
+    <button class="create ">Create</button> 
+    <section id="page" class="hide-page">
+        <main>
+            <section class="container" id="TODO"> 
+                <div class="heading TODO">TO DO</div>
+                   <!--INSERT TODO TASK-->
+            </section>
     
+            <section class="container" id="INPROGRESS">
+                <div class="heading INPROGRESS">IN PROGRESS</div>
+                   <!--INSERT INPROGRESS TASK-->
+            </section>
+    
+            <section class="container" id="DONE">
+                <div class="heading DONE">DONE</div> 
+                    <!--INSERT DONE TASK-->
+                </div>
+            </section>
+        </main>
+    
+        <section class="modal hide"> <!-- modal1 hide-->
+            <button class="material-symbols-outlined">expand_less</button>
+            <form id="create-task-form">
+                <input type="text" name="topic" placeholder="Enter Topic" required />
+                <textarea name="description"  cols="30" rows="3" placeholder="Description" required ></textarea>
+                <input type="text" name="developer"  placeholder="Developer Name" required />
+                <input type="number" name="estimatedays" placeholder="Estimated time in days" required />
+                    <select name="state" >
+                        <option value="TODO">To Do</option>
+                        <option value="INPROGRESS">In Progress</option>
+                        <option value="DONE">Done</option>
+                    </select>
+                <button name="submit">Create New Task</button>
+            </form>
+        </section>
+    </section>
+
+
+    <script src="drag.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,115 @@
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.create {
+    background-color: blue;
+    color: white;
+    font-size: medium;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 3px 2px 3px #b6b6b6;
+}
+
+.create:active {
+    background-color: blue;
+    color: white;
+    font-size: medium;
+    font-weight: 700;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px 4px #9da238;
+}
+
+.hide-page {
+    display: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    height: 90vh;
+    padding: 8px;
+}
+
+.heading {
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    color: #828282;
+}
+
+.task-card {
+    box-shadow: 2px 2px 4px #cdcdcd;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 4px ;
+}
+.estimate-days {
+    background-color: #e7e7e7;
+    padding: 5px;
+    border-radius: 5px; 
+    height: 20px;
+    justify-content: center;
+}
+.image {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+    background-color: violet;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.modal {
+    width: 500px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    z-index: 4;
+    background-color: white;
+    box-shadow: 2px 2px 10px #e7e7e7;
+}
+
+.hide {
+    height: 10px;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: -30px;
+    left: 480px;
+    border: none;
+    background-color: white;
+}
+
+
+#create-task-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px gray;
+}
